@@ -1,6 +1,9 @@
 (ns robozzle.core
   (:use midje.sweet clojure.set))
 
+;;; I didn't use the keywords directly in order to show just how long
+;;; you can defer choosing concrete data structures.
+
 (def north :north)
 (def south :south)
 (def east :east)
@@ -32,6 +35,10 @@
             (position current)))
 (def left (partial rotate left-rotation))
 (def right (partial rotate right-rotation))
+
+;;; Notice below that I got east and west reversed here. These facts,
+;;; alas, only check that I did what I intended to do, not that I
+;;; intended the right thing.
                  
 (fact "left changes the direction, but not the position"
   (left (snapshot north ...position...)) => (snapshot east ...position...)
@@ -59,8 +66,6 @@
           [start]
           moves))
 
-
-
 (fact "a voyage is created by successively applying moves to snapshots"
   (voyage ...start... []) => [...start...]
   (voyage ...start... [...move...])
@@ -73,9 +78,8 @@
            (set (take (inc move-count)
                       (trail (voyage start moves))))))
 
-;.;. It takes time to succeed because success is merely the natural reward
-;.;. of taking time to do anything well. -- Ross
-(fact
+(fact "It works end-to-end." 
+  ;;; This was the first test written.
   (let [start (snapshot north [0 0])
         winning-moves     [left forward right right forward forward]
         moves-stop-short  [left forward right right forward]
