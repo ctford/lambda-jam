@@ -1,0 +1,903 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# githubog: http://ogp.me/ns/fb/githubog#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Describing one checkable&#39;s prerequisites · marick/Midje Wiki</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub" />
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png" />
+    <link rel="logo" type="image/svg" href="https://github-media-downloads.s3.amazonaws.com/github-logo.svg" />
+    <meta property="og:image" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png">
+    <link rel="assets" href="https://a248.e.akamai.net/assets.github.com/">
+    <link rel="xhr-socket" href="/_sockets" />
+    
+    
+
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="selected-link" value="repo_wiki" data-pjax-transient />
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="71909" name="octolytics-actor-id" /><meta content="marick" name="octolytics-actor-login" /><meta content="05d9c31b6af9bed46132e1c117b5c81478524a2419aa7eebc7813b5846c9ad17" name="octolytics-actor-hash" />
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="08QrLZ0rcMnZV5OcD6KEdygQthWiKk7xo5wbHZe0vvs=" name="csrf-token" />
+
+    <link href="https://a248.e.akamai.net/assets.github.com/assets/github-be6069435cb0250bd316958375c0de713801bdf5.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://a248.e.akamai.net/assets.github.com/assets/github2-91a602bfb8b2a53f90aa7aea127a69e4f9ef1f11.css" media="all" rel="stylesheet" type="text/css" />
+    
+
+
+      <script src="https://a248.e.akamai.net/assets.github.com/assets/frameworks-1f72571b966545f4e27481a3b0ebbeeed4f2f139.js" type="text/javascript"></script>
+      <script src="https://a248.e.akamai.net/assets.github.com/assets/github-3b51dd74a94c713c22309e373955e5fa02a3bb65.js" type="text/javascript"></script>
+      
+      <meta http-equiv="x-pjax-version" content="f5ee7511175547406ed413cec6ae4c9b">
+
+        <script src="https://a248.e.akamai.net/assets.github.com/assets/wiki-5f94f237a61cfac742b656f8a10702b3b86e9b37.js" type="text/javascript"></script>
+
+  <meta property="og:title" content="Midje"/>
+  <meta property="og:type" content="githubog:gitrepository"/>
+  <meta property="og:url" content="https://github.com/marick/Midje"/>
+  <meta property="og:image" content="https://a248.e.akamai.net/assets.github.com/images/gravatars/gravatar-user-420.png"/>
+  <meta property="og:site_name" content="GitHub"/>
+  <meta property="og:description" content="Midje provides a migration path from clojure.test to a more flexible, readable, abstract, and gracious style of testing"/>
+
+  <meta name="description" content="Midje provides a migration path from clojure.test to a more flexible, readable, abstract, and gracious style of testing" />
+
+  <meta content="71909" name="octolytics-dimension-user_id" /><meta content="marick" name="octolytics-dimension-user_login" /><meta content="682082" name="octolytics-dimension-repository_id" /><meta content="marick/Midje" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="682082" name="octolytics-dimension-repository_network_root_id" /><meta content="marick/Midje" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/marick/Midje/commits/master.atom" rel="alternate" title="Recent Commits to Midje:master" type="application/atom+xml" />
+
+  </head>
+
+
+  <body class="logged_in  macintosh vis-public env-production  kill-the-chrome">
+
+    <div class="wrapper">
+      
+      
+      
+
+      <div class="header header-logged-in true">
+  <div class="container clearfix">
+
+    <a class="header-logo-invertocat" href="https://github.com/">
+  <span class="mega-octicon octicon-mark-github"></span>
+</a>
+
+    <div class="divider-vertical"></div>
+
+      <a href="/marick/Midje/notifications" class="notification-indicator tooltipped downwards contextually-unread" title="You have unread notifications in this repository">
+    <span class="mail-status unread"></span>
+  </a>
+  <div class="divider-vertical"></div>
+
+
+      <div class="command-bar js-command-bar  in-repository">
+          <form accept-charset="UTF-8" action="/search" class="command-bar-form" id="top_search_form" method="get">
+
+<input type="text" data-hotkey="/ s" name="q" id="js-command-bar-field" placeholder="Search or type a command" tabindex="1" autocapitalize="off"
+    
+    data-username="marick"
+      data-repo="marick/Midje"
+      data-branch="master"
+      data-sha="d74840c55dcea713bb7675847473d0ba115511e7"
+  >
+
+    <input type="hidden" name="nwo" value="marick/Midje" />
+
+    <div class="select-menu js-menu-container js-select-menu search-context-select-menu">
+      <span class="minibutton select-menu-button js-menu-target">
+        <span class="js-select-button">This repository</span>
+      </span>
+
+      <div class="select-menu-modal-holder js-menu-content js-navigation-container">
+        <div class="select-menu-modal">
+
+          <div class="select-menu-item js-navigation-item selected">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" class="js-search-this-repository" name="search_target" value="repository" checked="checked" />
+            <div class="select-menu-item-text js-select-button-text">This repository</div>
+          </div> <!-- /.select-menu-item -->
+
+          <div class="select-menu-item js-navigation-item">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" name="search_target" value="global" />
+            <div class="select-menu-item-text js-select-button-text">All repositories</div>
+          </div> <!-- /.select-menu-item -->
+
+        </div>
+      </div>
+    </div>
+
+  <span class="octicon help tooltipped downwards" title="Show command bar help">
+    <span class="octicon octicon-question"></span>
+  </span>
+
+
+  <input type="hidden" name="ref" value="cmdform">
+
+</form>
+        <ul class="top-nav">
+            <li class="explore"><a href="/explore">Explore</a></li>
+            <li><a href="https://gist.github.com">Gist</a></li>
+            <li><a href="/blog">Blog</a></li>
+          <li><a href="https://help.github.com">Help</a></li>
+        </ul>
+      </div>
+
+    
+
+  
+
+    <ul id="user-links">
+      <li>
+        <a href="/marick" class="name">
+          <img height="20" src="https://secure.gravatar.com/avatar/a523012f661f603806ab1c22d855216f?s=140&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="20" /> marick
+        </a>
+      </li>
+
+        <li>
+          <a href="/new" id="new_repo" class="tooltipped downwards" title="Create a new repo">
+            <span class="octicon octicon-repo-create"></span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/settings/profile" id="account_settings"
+            class="tooltipped downwards"
+            title="Account settings ">
+            <span class="octicon octicon-tools"></span>
+          </a>
+        </li>
+        <li>
+          <a class="tooltipped downwards" href="/logout" data-method="post" id="logout" title="Sign out">
+            <span class="octicon octicon-log-out"></span>
+          </a>
+        </li>
+
+    </ul>
+
+
+<div class="js-new-dropdown-contents hidden">
+  
+
+<ul class="dropdown-menu">
+  <li>
+    <a href="/new"><span class="octicon octicon-repo-create"></span> New repository</a>
+  </li>
+  <li>
+    <a href="/organizations/new"><span class="octicon octicon-list-unordered"></span> New organization</a>
+  </li>
+
+
+
+    <li class="section-title">
+      <span title="marick/Midje">This repository</span>
+    </li>
+    <li>
+      <a href="/marick/Midje/issues/new"><span class="octicon octicon-issue-opened"></span> New issue</a>
+    </li>
+      <li>
+        <a href="/marick/Midje/settings/collaboration"><span class="octicon octicon-person-add"></span> New collaborator</a>
+      </li>
+</ul>
+
+</div>
+
+
+    
+  </div>
+</div>
+
+      
+
+      
+
+
+
+
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+
+<ul class="pagehead-actions">
+
+
+    <li class="subscription">
+      <form accept-charset="UTF-8" action="/notifications/subscribe" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="08QrLZ0rcMnZV5OcD6KEdygQthWiKk7xo5wbHZe0vvs=" /></div>  <input id="repository_id" name="repository_id" type="hidden" value="682082" />
+
+    <div class="select-menu js-menu-container js-select-menu">
+      <span class="minibutton select-menu-button  js-menu-target">
+        <span class="js-select-button">
+          <span class="octicon octicon-eye-unwatch"></span>
+          Unwatch
+        </span>
+      </span>
+
+      <div class="select-menu-modal-holder">
+        <div class="select-menu-modal subscription-menu-modal js-menu-content">
+          <div class="select-menu-header">
+            <span class="select-menu-title">Notification status</span>
+            <span class="octicon octicon-remove-close js-menu-close"></span>
+          </div> <!-- /.select-menu-header -->
+
+          <div class="select-menu-list js-navigation-container">
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <div class="select-menu-item-text">
+                <input id="do_included" name="do" type="radio" value="included" />
+                <h4>Not watching</h4>
+                <span class="description">You only receive notifications for discussions in which you participate or are @mentioned.</span>
+                <span class="js-select-button-text hidden-select-button-text">
+                  <span class="octicon octicon-eye-watch"></span>
+                  Watch
+                </span>
+              </div>
+            </div> <!-- /.select-menu-item -->
+
+            <div class="select-menu-item js-navigation-item selected">
+              <span class="select-menu-item-icon octicon octicon octicon-check"></span>
+              <div class="select-menu-item-text">
+                <input checked="checked" id="do_subscribed" name="do" type="radio" value="subscribed" />
+                <h4>Watching</h4>
+                <span class="description">You receive notifications for all discussions in this repository.</span>
+                <span class="js-select-button-text hidden-select-button-text">
+                  <span class="octicon octicon-eye-unwatch"></span>
+                  Unwatch
+                </span>
+              </div>
+            </div> <!-- /.select-menu-item -->
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <div class="select-menu-item-text">
+                <input id="do_ignore" name="do" type="radio" value="ignore" />
+                <h4>Ignoring</h4>
+                <span class="description">You do not receive any notifications for discussions in this repository.</span>
+                <span class="js-select-button-text hidden-select-button-text">
+                  <span class="octicon octicon-mute"></span>
+                  Stop ignoring
+                </span>
+              </div>
+            </div> <!-- /.select-menu-item -->
+
+          </div> <!-- /.select-menu-list -->
+
+        </div> <!-- /.select-menu-modal -->
+      </div> <!-- /.select-menu-modal-holder -->
+    </div> <!-- /.select-menu -->
+
+</form>
+    </li>
+
+    <li class="js-toggler-container js-social-container starring-container on">
+      <a href="/marick/Midje/unstar" class="minibutton with-count js-toggler-target star-button starred upwards" title="Unstar this repo" data-remote="true" data-method="post" rel="nofollow">
+        <span class="octicon octicon-star-delete"></span>
+        <span class="text">Unstar</span>
+      </a>
+      <a href="/marick/Midje/star" class="minibutton with-count js-toggler-target star-button unstarred upwards" title="Star this repo" data-remote="true" data-method="post" rel="nofollow">
+        <span class="octicon octicon-star"></span>
+        <span class="text">Star</span>
+      </a>
+      <a class="social-count js-social-count" href="/marick/Midje/stargazers">527</a>
+    </li>
+
+        <li>
+          <a href="/marick/Midje/fork" class="minibutton with-count js-toggler-target fork-button lighter upwards" title="Fork this repo" rel="facebox nofollow">
+            <span class="octicon octicon-git-branch-create"></span>
+            <span class="text">Fork</span>
+          </a>
+          <a href="/marick/Midje/network" class="social-count">55</a>
+        </li>
+
+
+</ul>
+
+        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="repo-label"><span>public</span></span>
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author">
+            <a href="/marick" class="url fn" itemprop="url" rel="author"><span itemprop="title">marick</span></a></span
+          ><span class="repohead-name-divider">/</span><strong
+          ><a href="/marick/Midje" class="js-current-repository js-repo-home-link">Midje</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="Octocat-spinner-32" height="16" src="https://a248.e.akamai.net/assets.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+
+      <div class="repository-with-sidebar repo-container
+            ">
+
+          <div class="repository-sidebar">
+
+              
+
+<div class="repo-nav repo-nav-full js-repository-container-pjax js-octicon-loaders">
+  <div class="repo-nav-contents">
+    <ul class="repo-menu">
+      <li class="tooltipped leftwards" title="Code">
+        <a href="/marick/Midje" class="js-selected-navigation-item " data-gotokey="c" data-pjax="true" data-selected-links="repo_source repo_downloads repo_commits repo_tags repo_branches /marick/Midje">
+          <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://a248.e.akamai.net/assets.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+        <li class="tooltipped leftwards" title="Issues">
+          <a href="/marick/Midje/issues" class="js-selected-navigation-item js-disable-pjax" data-gotokey="i" data-selected-links="repo_issues /marick/Midje/issues">
+            <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+            <span class='counter'>31</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://a248.e.akamai.net/assets.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>        </li>
+
+      <li class="tooltipped leftwards" title="Pull Requests"><a href="/marick/Midje/pulls" class="js-selected-navigation-item js-disable-pjax" data-gotokey="p" data-selected-links="repo_pulls /marick/Midje/pulls">
+            <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull Requests</span>
+            <span class='counter'>0</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://a248.e.akamai.net/assets.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+
+        <li class="tooltipped leftwards" title="Wiki">
+          <a href="/marick/Midje/wiki" class="js-selected-navigation-item selected" data-pjax="true" data-selected-links="repo_wiki /marick/Midje/wiki">
+            <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://a248.e.akamai.net/assets.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>        </li>
+
+
+    </ul>
+    <div class="repo-menu-separator"></div>
+    <ul class="repo-menu">
+
+      <li class="tooltipped leftwards" title="Pulse">
+        <a href="/marick/Midje/pulse" class="js-selected-navigation-item " data-pjax="true" data-selected-links="pulse /marick/Midje/pulse">
+          <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://a248.e.akamai.net/assets.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped leftwards" title="Graphs">
+        <a href="/marick/Midje/graphs" class="js-selected-navigation-item " data-pjax="true" data-selected-links="repo_graphs repo_contributors /marick/Midje/graphs">
+          <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://a248.e.akamai.net/assets.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped leftwards" title="Network">
+        <a href="/marick/Midje/network" class="js-selected-navigation-item js-disable-pjax" data-selected-links="repo_network /marick/Midje/network">
+          <span class="octicon octicon-git-branch"></span> <span class="full-word">Network</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://a248.e.akamai.net/assets.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    </ul>
+
+      <div class="repo-menu-separator"></div>
+      <ul class="repo-menu">
+        <li class="tooltipped leftwards" title="Settings">
+          <a href="/marick/Midje/settings" data-pjax>
+            <span class="octicon octicon-tools"></span> <span class="full-word">Settings</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://a248.e.akamai.net/assets.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </a>
+        </li>
+      </ul>
+  </div>
+</div>
+
+
+              <div class="only-with-full-nav">
+
+                
+
+  
+
+<div class="clone-url "
+  data-protocol-type="http"
+  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=push">
+  <h3><strong>HTTPS</strong> clone URL</h3>
+
+  <input type="text" class="clone js-url-field"
+         value="https://github.com/marick/Midje.git" readonly="readonly">
+
+  <span class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="https://github.com/marick/Midje.git" data-copied-hint="copied!" title="copy to clipboard"><span class="octicon octicon-clippy"></span></span>
+</div>
+
+  
+
+<div class="clone-url open"
+  data-protocol-type="ssh"
+  data-url="/users/set_protocol?protocol_selector=ssh&amp;protocol_type=push">
+  <h3><strong>SSH</strong> clone URL</h3>
+
+  <input type="text" class="clone js-url-field"
+         value="git@github.com:marick/Midje.git" readonly="readonly">
+
+  <span class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="git@github.com:marick/Midje.git" data-copied-hint="copied!" title="copy to clipboard"><span class="octicon octicon-clippy"></span></span>
+</div>
+
+  
+
+<div class="clone-url "
+  data-protocol-type="subversion"
+  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=push">
+  <h3><strong>Subversion</strong> checkout URL</h3>
+
+  <input type="text" class="clone js-url-field"
+         value="https://github.com/marick/Midje" readonly="readonly">
+
+  <span class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="https://github.com/marick/Midje" data-copied-hint="copied!" title="copy to clipboard"><span class="octicon octicon-clippy"></span></span>
+</div>
+
+
+
+<p class="clone-options">You can clone with
+    <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a>,
+    <a href="#" class="js-clone-selector" data-protocol="ssh">SSH</a>,
+    <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>,
+  and <a href="https://help.github.com/articles/which-remote-url-should-i-use">other methods.</a>
+</p>
+
+  <a href="github-mac://openRepo/https://github.com/marick/Midje" class="minibutton sidebar-button">
+    <span class="octicon octicon-device-desktop"></span>
+    Clone in Desktop
+  </a>
+
+
+
+                  <a href="/marick/Midje/archive/master.zip"
+                     class="minibutton sidebar-button"
+                     title="Download this repository as a zip file"
+                     rel="nofollow">
+                    <span class="octicon octicon-cloud-download"></span>
+                    Download ZIP
+                  </a>
+
+              </div>
+          </div>
+
+          <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+            
+
+<div class="tabnav">
+  <ul class="tabnav-tabs">
+    <li><a href="/marick/Midje/wiki" class="js-selected-navigation-item tabnav-tab" data-selected-links=" /marick/Midje/wiki">Home</a></li>
+    <li><a href="/marick/Midje/wiki/_pages" class="js-selected-navigation-item tabnav-tab" data-selected-links=" /marick/Midje/wiki/_pages">Pages</a></li>
+    <li><a href="/marick/Midje/wiki/_history" class="js-selected-navigation-item tabnav-tab" data-selected-links=" /marick/Midje/wiki/_history">History</a></li>
+  </ul>
+  <div class="tabnav-right">
+    <div class="tabnav-widget">
+      <a href="/marick/Midje/wiki/_new" class="button minibutton primary js-new-wiki-page">New Page</a>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="wiki-wrapper" class="page">
+<div id="head">
+  <ul class="wiki-actions readability-extra">
+    <li class="gollum-minibutton"><a href="/marick/Midje/wiki/Describing-one-checkable%27s-prerequisites/_edit"
+       class="minibutton bigger action-edit-page">
+       Edit Page
+     </a></li>
+    <li class="gollum-minibutton"><a href="/marick/Midje/wiki/Describing-one-checkable&#39;s-prerequisites/_history"
+       class="minibutton bigger action-page-history">
+       Page History
+     </a></li>
+    <li class="gollum-minibutton"><span class="js-zeroclipboard minibutton" data-clipboard-text="git@github.com:marick/Midje.wiki.git" data-copied-hint="copied!" title="Click to copy url to clipboard">Clone URL</span></li>
+  </ul>
+  <h1 class="instapaper_title">Describing one checkable's prerequisites</h1>
+</div>
+<div id="wiki-content">
+  <div class="wrap">
+  <div id="wiki-body" class="gollum-markdown-content instapaper_body">
+    <div class="markdown-body">
+      <p><a href="https://github.com/marick/Midje/blob/master/test/as_documentation/prerequisites__checkable_specific.clj">Executable examples</a></p>
+
+<p>Here is an example of using a prerequisite in the development of a function that combines the <code>:test-paths</code> and <code>:source-paths</code> keys in a Leiningen project file. We know we'll eventually have to read the project file, but let's defer worrying about that. Instead, we simply declare there'll someday be a function named <code>read-project-file</code>:</p>
+
+<div class="highlight"><pre><span class="p">(</span><span class="nf">unfinished</span> <span class="nv">read-project-file</span><span class="p">)</span>
+</pre></div>
+
+<p><code>unfinished</code> is similar to Clojure's <code>declare</code> in that it can take multiple arguments and define a var for each one of them. Unlike <code>declare</code>, it binds the var to a function that blows up if called:</p>
+
+<div class="highlight"><pre><span class="nv">user=&gt;</span> <span class="p">(</span><span class="nf">read-project-file</span><span class="p">)</span>
+<span class="nv">Error</span> <span class="o">#</span><span class="ss">'read-project-file</span> <span class="nv">has</span> <span class="nv">no</span> <span class="nv">implementation</span>, <span class="nv">but</span> <span class="nv">it</span> <span class="nv">was</span> <span class="nv">called</span> <span class="nv">like</span> <span class="nv">this</span><span class="err">:</span>
+<span class="p">(</span><span class="nf">read-project-file</span> <span class="p">)</span>  <span class="nv">midje.util.exceptions/user-error</span> <span class="p">(</span><span class="nf">exceptions.clj</span><span class="ss">:13</span><span class="p">)</span>
+</pre></div>
+
+<p>Let's begin with an empty <code>fetch-project-paths</code> and write a fact:</p>
+
+<div class="highlight"><pre><span class="p">(</span><span class="kd">defn </span><span class="nv">fetch-project-paths</span> <span class="p">[]</span>
+  <span class="p">)</span>
+
+<span class="p">(</span><span class="nf">fact</span> <span class="s">"test and source paths are returned, tests first"</span>
+  <span class="p">(</span><span class="nf">fetch-project-paths</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="p">[</span><span class="s">"test1"</span> <span class="s">"test2"</span> <span class="s">"source1"</span><span class="p">]</span>
+  <span class="p">(</span><span class="nf">provided</span>
+     <span class="p">(</span><span class="nf">read-project-file</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="p">{</span><span class="ss">:test-paths</span> <span class="p">[</span><span class="s">"test1"</span> <span class="s">"test2"</span><span class="p">]</span>
+                             <span class="ss">:source-paths</span> <span class="p">[</span><span class="s">"source1"</span><span class="p">]}))</span>
+</pre></div>
+
+<p>Note the somewhat peculiar syntax. The <code>provided</code> form <em>follows</em> the <a class="internal present" href="/marick/Midje/wiki/Checkables">checkable</a>; it isn't enclosed in it. A <code>provided</code> form can contain several prerequisites. Each of them describes a function call with arguments. When that function is called with matching arguments, it is made to return the right-hand side of the arrow.</p>
+
+<p>Checking this fact will fail because it predicted a triplet but the actual value was <code>nil</code>:</p>
+
+<div class="highlight"><pre><span class="nv">FAIL</span> <span class="s">"test and source paths are returned, tests first"</span> <span class="nv">at</span> <span class="p">(</span><span class="nf">prerequisites__checkable_specific.clj</span><span class="ss">:15</span><span class="p">)</span>
+    <span class="nv">Expected</span><span class="err">:</span> <span class="p">[</span><span class="s">"test1"</span> <span class="s">"test2"</span> <span class="s">"source1"</span><span class="p">]</span>
+      <span class="nv">Actual</span><span class="err">:</span> <span class="nv">nil</span>
+<span class="nv">false</span>
+</pre></div>
+
+<p>However, it also fails because the prerequisite function was never called:</p>
+
+<div class="highlight"><pre><span class="nv">FAIL</span> <span class="nv">at</span> <span class="p">(</span><span class="nf">prerequisites__checkable_specific.clj</span><span class="ss">:17</span><span class="p">)</span>
+<span class="nv">These</span> <span class="nv">calls</span> <span class="nv">were</span> <span class="nb">not </span><span class="nv">made</span> <span class="nv">the</span> <span class="nb">right </span><span class="nv">number</span> <span class="nv">of</span> <span class="nv">times</span><span class="err">:</span>
+    <span class="p">(</span><span class="nf">read-project-file</span><span class="p">)</span> <span class="p">[</span><span class="nv">expected</span> <span class="nv">at</span> <span class="nv">least</span> <span class="nv">once</span>, <span class="nv">actually</span> <span class="nv">never</span> <span class="nv">called</span><span class="p">]</span>
+</pre></div>
+
+<p>The combination of checkable and prerequisite made two checkable claims, neither of which succeed:</p>
+
+<ul>
+<li>
+<code>fetch-project-paths</code> will return a certain value.</li>
+<li>In doing so, it will call <code>read-project-file</code> in a certain way.</li>
+</ul><p>We can now implement <code>fetch-project-paths</code>. Just for fun, we'll do it in a silly way:</p>
+
+<div class="highlight"><pre><span class="p">(</span><span class="kd">defn </span><span class="nv">fetch-project-paths</span> <span class="p">[]</span>
+    <span class="p">(</span><span class="nf">flatten</span> <span class="p">((</span><span class="nf">juxt</span> <span class="ss">:test-paths</span> <span class="ss">:source-paths</span><span class="p">)</span> <span class="p">(</span><span class="nf">read-project-file</span><span class="p">))))</span>
+</pre></div>
+
+<p>The fact now succeeds.</p>
+
+<p>We're not done with the implementation, though. What if the project file doesn't exist? In that case, we want <code>fetch-project-paths</code> to return <code>["test"]</code>. It might be better to do that in a separate fact, but I'm going to tack it on to the existing one to show how checkables with prerequisites stack up in a fact:</p>
+
+<div class="highlight"><pre><span class="p">(</span><span class="nf">fact</span> <span class="s">"fetch-project-paths"</span>
+  <span class="p">(</span><span class="nf">fetch-project-paths</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="p">[</span><span class="s">"test1"</span> <span class="s">"test2"</span> <span class="s">"source1"</span><span class="p">]</span>
+  <span class="p">(</span><span class="nf">provided</span>
+     <span class="p">(</span><span class="nf">read-project-file</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="p">{</span><span class="ss">:test-paths</span> <span class="p">[</span><span class="s">"test1"</span> <span class="s">"test2"</span><span class="p">]</span>
+                             <span class="ss">:source-paths</span> <span class="p">[</span><span class="s">"source1"</span><span class="p">]})</span>
+
+  <span class="p">(</span><span class="nf">fetch-project-paths</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="p">[</span><span class="s">"test"</span><span class="p">]</span>
+  <span class="p">(</span><span class="nf">provided</span>
+    <span class="p">(</span><span class="nf">read-project-file</span><span class="p">)</span> <span class="nv">=throws=&gt;</span> <span class="p">(</span><span class="nf">Error.</span> <span class="s">"boom!"</span><span class="p">)))</span>
+</pre></div>
+
+<p>Notice that I've defined something new about the not-yet-implemented <code>read-project-file</code>: its behavior when no file exists. Throwing an Error may not be the best choice, but it lets me show the <code>=throws=&gt;</code> arrow. See below for more about prerequisite arrows.</p>
+
+<p>When this fact is checked, the result is this:</p>
+
+<div class="highlight"><pre><span class="nv">FAIL</span> <span class="s">"fetch-project-paths"</span> <span class="nv">at</span> <span class="p">(</span><span class="nf">prerequisites__checkable_specific.clj</span><span class="ss">:20</span><span class="p">)</span>
+    <span class="nv">Expected</span><span class="err">:</span> <span class="p">[</span><span class="s">"test"</span><span class="p">]</span>
+      <span class="nv">Actual</span><span class="err">:</span> <span class="nv">java.lang.Error</span><span class="err">:</span> <span class="nv">boom!</span>
+              <span class="nv">as_documentation...</span><span class="p">(</span><span class="nf">prerequisites__checkable_specific.clj</span><span class="ss">:14</span><span class="p">)</span>
+</pre></div>
+
+<p>Now we can fix the code:</p>
+
+<div class="highlight"><pre><span class="p">(</span><span class="kd">defn </span><span class="nv">fetch-project-paths</span> <span class="p">[]</span>
+  <span class="p">(</span><span class="nf">try</span>
+    <span class="p">(</span><span class="nf">flatten</span> <span class="p">((</span><span class="nf">juxt</span> <span class="ss">:test-paths</span> <span class="ss">:source-paths</span><span class="p">)</span> <span class="p">(</span><span class="nf">read-project-file</span><span class="p">)))</span>
+  <span class="p">(</span><span class="nf">catch</span> <span class="nv">Error</span> <span class="nv">ex</span>
+    <span class="p">[</span><span class="s">"test"</span><span class="p">])))</span>
+</pre></div>
+
+<p>The fact will now check out. And here's a prettier version of the test:</p>
+
+<div class="highlight"><pre><span class="p">(</span><span class="nf">facts</span> <span class="s">"about fetch-project-paths"</span>
+  <span class="p">(</span><span class="nf">fact</span> <span class="s">"returns the project file's test and source paths, in that order"</span>
+    <span class="p">(</span><span class="nf">fetch-project-paths</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="p">[</span><span class="s">"test1"</span> <span class="s">"test2"</span> <span class="s">"source1"</span><span class="p">]</span>
+    <span class="p">(</span><span class="nf">provided</span>
+      <span class="p">(</span><span class="nf">read-project-file</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="p">{</span><span class="ss">:test-paths</span> <span class="p">[</span><span class="s">"test1"</span> <span class="s">"test2"</span><span class="p">]</span>
+                              <span class="ss">:source-paths</span> <span class="p">[</span><span class="s">"source1"</span><span class="p">]}))</span>
+  <span class="p">(</span><span class="nf">fact</span> <span class="s">"returns [\"</span><span class="nv">test</span><span class="sc">\</span><span class="s">"] if there is no project file."</span>
+    <span class="p">(</span><span class="nf">fetch-project-paths</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="p">[</span><span class="s">"test"</span><span class="p">]</span>
+    <span class="p">(</span><span class="nf">provided</span>
+      <span class="p">(</span><span class="nf">read-project-file</span><span class="p">)</span> <span class="nv">=throws=&gt;</span> <span class="p">(</span><span class="nf">Error.</span> <span class="s">"boom!"</span><span class="p">))))</span>
+</pre></div>
+
+<h2>
+<a name="metaconstants" class="anchor" href="#metaconstants"><span class="octicon octicon-link"></span></a>Metaconstants</h2>
+
+<p>Generally, I don't like constants like <code>"test1"</code> and the like in my facts. In the one above, they're harmless, but sometimes when you read them, you wonder: "Is this just a randomly-chosen value, or is there something special about it?—something that matters to what the function under test does?" </p>
+
+<p>To help you avoid such questions, Midje provides <em>metaconstants</em>. A metaconstant explicitly has no properties except identity and whatever properties you assign it via a prerequisite. Here's an alternative to the first of the two facts above:</p>
+
+<div class="highlight"><pre><span class="p">(</span><span class="nf">fact</span> <span class="s">"fetch-project-paths returns the project file's test and source paths, in that order"</span>
+  <span class="p">(</span><span class="nf">fetch-project-paths</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="p">[</span><span class="nv">..test1..</span> <span class="nv">..test2..</span> <span class="nv">..source..</span><span class="p">]</span>
+  <span class="p">(</span><span class="nf">provided</span>
+    <span class="p">(</span><span class="nf">read-project-file</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="p">{</span><span class="ss">:test-paths</span> <span class="p">[</span><span class="nv">..test1..</span> <span class="nv">..test2..</span><span class="p">]</span>
+                            <span class="ss">:source-paths</span> <span class="p">[</span><span class="nv">..source..</span><span class="p">]}))</span>
+</pre></div>
+
+<p>This leaves no doubt that the actual names have nothing to do with <code>fetch-project-paths</code>: all that can matter is the contents of two vectors.</p>
+
+<p>To show how metaconstants work with prerequisites, consider a function that computes a grade point average from a list of courses:</p>
+
+<div class="highlight"><pre><span class="p">(</span><span class="nf">fact</span> <span class="s">"GPA is weighted by credit hours"</span>
+  <span class="p">(</span><span class="nf">gpa</span> <span class="p">[{</span><span class="ss">:credit-hours</span> <span class="mi">1</span>, <span class="ss">:grade</span> <span class="mi">5</span><span class="p">}</span>
+        <span class="p">{</span><span class="ss">:credit-hours</span> <span class="mi">2</span>, <span class="ss">:grade</span> <span class="mi">3</span><span class="p">}])</span>
+  <span class="nv">=&gt;</span> <span class="p">(</span><span class="nf">roughly</span> <span class="mf">3.66</span> <span class="mf">0.01</span><span class="p">))</span>
+</pre></div>
+
+<p>Simple enough. However, the University administration has a new requirement for GPA calculation: the child of a wealthy alumnus gets an automatic half point increase in GPA. </p>
+
+<p><code>gpa</code> will need to take an argument describing the student. However, we don't want to assume too much about the data structure. In fact, we want to assume nothing more than that it provides the information <code>gpa</code> needs.</p>
+
+<p>Here, then, is a fact that both checks the requirement and ensures our code won't be overly coupled to the student data structure:</p>
+
+<div class="highlight"><pre><span class="p">(</span><span class="nf">fact</span>
+  <span class="p">(</span><span class="k">let </span><span class="p">[</span><span class="nv">correct-gpa</span> <span class="mf">3.66</span>
+        <span class="nv">tolerance</span> <span class="mf">0.01</span>
+        <span class="nv">coursework</span> <span class="p">[{</span><span class="ss">:credit-hours</span> <span class="mi">1</span>, <span class="ss">:grade</span> <span class="mi">5</span><span class="p">}</span>
+                    <span class="p">{</span><span class="ss">:credit-hours</span> <span class="mi">2</span>, <span class="ss">:grade</span> <span class="mi">3</span><span class="p">}]]</span>
+
+    <span class="p">(</span><span class="nf">gpa</span> <span class="nv">..student..</span> <span class="nv">coursework</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="p">(</span><span class="nf">roughly</span> <span class="nv">correct-gpa</span> <span class="nv">tolerance</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">provided</span> <span class="p">(</span><span class="nf">child-of-wealthy-alumnus?</span> <span class="nv">..student..</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="nv">false</span><span class="p">)</span>
+    
+    <span class="p">(</span><span class="nf">gpa</span> <span class="nv">..student..</span> <span class="nv">coursework</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="p">(</span><span class="nf">roughly</span> <span class="p">(</span><span class="nb">+ </span><span class="nv">correct-gpa</span> <span class="mf">0.5</span><span class="p">)</span> <span class="nv">tolerance</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">provided</span> <span class="p">(</span><span class="nf">child-of-wealthy-alumnus?</span> <span class="nv">..student..</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="nv">true</span><span class="p">)))</span>
+</pre></div>
+
+<p><strong>Exercises</strong>: </p>
+
+<ol>
+<li><p>Unlikely as it may seem to you, class warrior that you are, a <a href="http://collegeapps.about.com/od/theartofgettingaccepted/f/legacy-admissions.htm">legacy admission</a> might have the work ethic to get good marks, ones leading to, say, a GPA of 4.7. Our <a href="http://www.usingenglish.com/forum/english-idioms-sayings/67998-thumb-scale.html">thumb-on-the-scale</a> computation would produce a GPA of 5.2, which is higher than the maximum possible. Update the fact to make 5.0 the maximum result of the <code>gpa</code> function. Improve the existing <a href="https://github.com/marick/Midje/blob/master/test/as_documentation/prerequisites__checkable_specific.clj">implementation</a>.</p></li>
+<li><p>You might have found updating the fact somewhat annoying or tedious. There's an old saying: if the testing is hard, the problem is probably in your design. In this case, I think it's a problem that <code>gpa</code> smooshes two responsibilities together: that of making a fair GPA calculation, and that of cheating in some cases. Split the existing fact into two parts: one that describes fair calculations done by <code>fair-gpa</code>, and one that describes how <code>gpa</code> uses <code>fair-gpa</code>. The second fact should use a <code>..coursework..</code> metaconstant.</p></li>
+</ol><h2>
+<a name="prerequisites-use-a-variant-of-extended-equality-to-match-arguments" class="anchor" href="#prerequisites-use-a-variant-of-extended-equality-to-match-arguments"><span class="octicon octicon-link"></span></a>Prerequisites use a variant of extended equality to match arguments</h2>
+
+<p>Prerequisites don't just check that a function was called. They check that it was called with <em>particular arguments</em>. Most often, arguments are given explicitly and compared with equality. Here's a typical, if somewhat contrived, example:</p>
+
+<div class="highlight"><pre><span class="p">(</span><span class="nf">unfinished</span> <span class="nv">g</span><span class="p">)</span>
+
+<span class="p">(</span><span class="kd">defn </span><span class="nv">f</span> <span class="p">[</span><span class="nv">w1</span> <span class="nv">w2</span><span class="p">]</span> <span class="p">(</span><span class="nb">inc </span><span class="p">(</span><span class="nf">g</span> <span class="p">(</span><span class="nb">str </span><span class="nv">w1</span> <span class="s">", "</span> <span class="nv">w2</span><span class="p">))))</span>
+
+<span class="p">(</span><span class="nf">fact</span> 
+  <span class="p">(</span><span class="nf">f</span> <span class="s">"hello"</span> <span class="s">"world"</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="mi">13</span>
+  <span class="p">(</span><span class="nf">provided</span> 
+    <span class="p">(</span><span class="nf">g</span> <span class="s">"hello, world"</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="mi">12</span><span class="p">))</span>
+</pre></div>
+
+<p>If the calculation of g's argument were slightly changed, the fact would fail because it was called incorrectly:</p>
+
+<div class="highlight"><pre><span class="nv">FAIL</span> <span class="nv">at</span> <span class="p">(</span><span class="nf">NO_SOURCE_FILE</span><span class="ss">:4</span><span class="p">)</span>
+<span class="nv">You</span> <span class="nv">never</span> <span class="nv">said</span> <span class="o">#</span><span class="ss">'g</span> <span class="nv">would</span> <span class="nv">be</span> <span class="nv">called</span> <span class="nv">with</span> <span class="nv">these</span> <span class="nv">arguments</span><span class="err">:</span>
+    <span class="p">(</span><span class="s">"hello: world"</span><span class="p">)</span>
+</pre></div>
+
+<p>You don't always want exact argument matching. For that reason, Midje uses something close to <a class="internal present" href="/marick/Midje/wiki/Extended-equality">extended equality</a> for argument matching. For example, when you use a regular expression as a prerequisite argument, the comparison is not done using equality, but rather <code>re-find</code>. So, if all we care is that the argument to <code>g</code> contains both of <code>f</code>'s arguments, we could write this:</p>
+
+<div class="highlight"><pre><span class="p">(</span><span class="nf">fact</span> 
+  <span class="p">(</span><span class="nf">f</span> <span class="s">"hello"</span> <span class="s">"world"</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="mi">13</span>
+  <span class="p">(</span><span class="nf">provided</span> 
+    <span class="p">(</span><span class="nf">g</span> <span class="o">#</span><span class="s">"hello.*world"</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="mi">12</span><span class="p">))</span>
+</pre></div>
+
+<p>Calls to <code>g</code> will now return 12 if given "hello, world", "hello: world", or "hello! world of mine".</p>
+
+<p>You can also use predefined checkers. For example, if you're testing a function <code>f</code> that does floating point computations to calculate the argument to <code>g</code>, you might want to use <code>roughly</code>:</p>
+
+<div class="highlight"><pre> <span class="p">(</span><span class="nf">provided</span> 
+   <span class="p">(</span><span class="nf">g</span> <span class="p">(</span><span class="nf">roughly</span> <span class="mf">5.0</span> <span class="mf">0.01</span><span class="p">))</span> <span class="nv">=&gt;</span> <span class="mi">89</span><span class="p">))</span>
+</pre></div>
+
+<p>Or if you don't actually care <em>what</em> argument <code>g</code> is called with, you can use <code>anything</code>:</p>
+
+<div class="highlight"><pre> <span class="p">(</span><span class="nf">provided</span> 
+   <span class="p">(</span><span class="nf">g</span> <span class="nv">anything</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="mi">89</span><span class="p">))</span>
+</pre></div>
+
+<p>Argument matching isn't quite the same as extended equality, though. It differs in the handling of functions <em>other than</em> predefined checkers. Given how common higher-order functions are in Clojure, it's much more likely that a function as an argument is meant to be taken literally than to be used for matching. Therefore, in the following:</p>
+
+<div class="highlight"><pre><span class="p">(</span><span class="nf">fact</span> 
+  <span class="p">(</span><span class="nf">function-under-test</span> <span class="mi">3</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="nv">..hilbertian-result..</span>
+  <span class="p">(</span><span class="nf">provided</span>
+    <span class="p">(</span><span class="nf">hilbertian</span> <span class="nv">even?</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="nv">..hilbertian-result..</span><span class="p">))</span>
+</pre></div>
+
+<p>... the prerequisite predicts that <code>hilbertian</code> will be called with the function <code>even?</code>, rather than with an even number. If you actually want a plain function to be used as an argument matcher, wrap it in <code>as-checker</code>:</p>
+
+<div class="highlight"><pre><span class="p">(</span><span class="nf">provided</span>
+  <span class="p">(</span><span class="nf">hilbertian</span> <span class="p">(</span><span class="nf">as-checker</span> <span class="nv">even?</span><span class="p">))</span> <span class="nv">=&gt;</span> <span class="nv">..hilbertian-result..</span><span class="p">))</span>
+</pre></div>
+
+<p>To summarize: There's a difference between the extended equality used on the right-hand side of checkables and that used for argument matching in prerequisites. The difference is entirely in the handling of ordinary Clojure functions, those not explicitly marked as "official" Midje checkers. You can temporarily mark an ordinary function with <code>as-checker</code>. To make a permanently marked checker with the same status as <code>roughly</code> or <code>anything</code>, see <a class="internal present" href="/marick/Midje/wiki/Defining-checkers-for-use-in-prerequisites">defining checkers for use in prerequisites</a>.</p>
+
+<h2>
+<a name="call-counts" class="anchor" href="#call-counts"><span class="octicon octicon-link"></span></a>Call counts</h2>
+
+<p>Prerequisites defined by <code>provided</code> <em>must</em> be called once and <em>may</em> be called more than once. You can, however, adjust that expectation. Here's how you insist that a prerequisite be called exactly two times:</p>
+
+<div class="highlight"><pre> <span class="p">(</span><span class="nf">provided</span>
+   <span class="p">(</span><span class="nf">f</span> <span class="mi">5</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="mi">50</span> <span class="ss">:times</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+<p>You can use sequences, including lazy sequences, to describe a range of times a prerequisite must be called. </p>
+
+<div class="highlight"><pre> <span class="p">(</span><span class="nf">provided</span>
+   <span class="p">(</span><span class="nf">f</span> <span class="mi">5</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="mi">50</span> <span class="ss">:times</span> <span class="p">[</span><span class="mi">2</span> <span class="mi">3</span><span class="p">]</span>
+   <span class="p">(</span><span class="nf">f</span> <span class="mi">4</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="mi">40</span> <span class="ss">:times</span> <span class="p">(</span><span class="nb">range </span><span class="mi">3</span> <span class="mi">33</span><span class="p">))</span>
+</pre></div>
+
+<p>To say "this call is optional", use this idiom:</p>
+
+<div class="highlight"><pre> <span class="p">(</span><span class="nf">provided</span>
+   <span class="p">(</span><span class="nf">f</span> <span class="mi">5</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="mi">50</span> <span class="ss">:times</span> <span class="p">(</span><span class="nf">range</span><span class="p">))</span>
+</pre></div>
+
+<p>Just for grins, you can also give a function:</p>
+
+<div class="highlight"><pre> <span class="p">(</span><span class="nf">provided</span>
+   <span class="p">(</span><span class="nf">f</span> <span class="mi">1</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="mi">1</span> <span class="ss">:times</span> <span class="nv">even?</span><span class="p">))</span>
+</pre></div>
+
+<p>The function is given the actual count of how often the function was called. If it returns a truthy value, all is well.</p>
+
+<h3>
+<a name="the-not-called-case" class="anchor" href="#the-not-called-case"><span class="octicon octicon-link"></span></a>The "not-called" case</h3>
+
+<p>Suppose you want to predict that a function will never be called. That's awkward for two reasons:</p>
+
+<ol>
+<li>You have to describe the arguments the function would be called with, were it ever called, which it's not supposed to be. </li>
+<li>You have to provide the value the function would return, were it ever called, which it's not supposed to be.</li>
+</ol><p>So:</p>
+
+<div class="highlight"><pre> <span class="p">(</span><span class="nf">provided</span>
+  <span class="p">(</span><span class="nf">f</span> <span class="nv">anything</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="nv">irrelevant</span> <span class="ss">:times</span> <span class="mi">0</span><span class="p">))</span>
+</pre></div>
+
+<p>Sorry. This will eventually be fixed.</p>
+
+<h2>
+<a name="shorthand-for-prerequisite-chaining" class="anchor" href="#shorthand-for-prerequisite-chaining"><span class="octicon octicon-link"></span></a>Shorthand for prerequisite chaining</h2>
+
+<p>To make up for the previous section's awkwardness, here's a case where Midje works in a friendly way.</p>
+
+<p>Consider this code:</p>
+
+<div class="highlight"><pre><span class="p">(</span><span class="kd">defn </span><span class="nv">function-under-test</span> <span class="p">[</span><span class="nv">n</span><span class="p">]</span>
+ <span class="p">(</span><span class="nb">inc </span><span class="p">(</span><span class="nf">happens-second</span> <span class="p">(</span><span class="nf">happens-first</span> <span class="mi">1</span> <span class="nv">n</span><span class="p">))))</span>
+</pre></div>
+
+<p>Let's suppose we want to get <code>function-under-test</code> right before working on <code>happens-second</code> and <code>happens-first</code>. We could work from this fact:</p>
+
+<div class="highlight"><pre><span class="p">(</span><span class="nf">fact</span>
+  <span class="p">(</span><span class="nf">function-under-test</span> <span class="mi">5</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="mi">101</span>
+  <span class="p">(</span><span class="nf">provided</span>
+    <span class="p">(</span><span class="nf">happens-first</span> <span class="mi">1</span> <span class="mi">5</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="nv">..some-result..</span>
+    <span class="p">(</span><span class="nf">happens-second</span> <span class="nv">..some-result..</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="mi">100</span><span class="p">))</span>
+</pre></div>
+
+<p>This is too wordy. What matters for understanding the relationships between functions is that <code>happens-second</code> works on the result of <code>happens-first</code>. What that result is doesn't matter to <code>function-under-test</code> (only to the two subsidiary functions). So there's no reason to give it a name: the two lines about its production and use just add clutter. We want one line. Like this:</p>
+
+<div class="highlight"><pre><span class="p">(</span><span class="nf">fact</span>
+  <span class="p">(</span><span class="nf">function-under-test</span> <span class="mi">5</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="mi">101</span>
+  <span class="p">(</span><span class="nf">provided</span>
+    <span class="p">(</span><span class="nf">happens-second</span> <span class="p">(</span><span class="nf">happens-first</span> <span class="mi">1</span> <span class="mi">5</span><span class="p">))</span> <span class="nv">=&gt;</span> <span class="mi">100</span><span class="p">))</span>
+</pre></div>
+
+<p>Midje expands that single prerequisite into the two prerequisites of the previous version, generating the intermediate metaconstant for you.</p>
+
+<h2>
+<a name="an-annoyance-argument-arity" class="anchor" href="#an-annoyance-argument-arity"><span class="octicon octicon-link"></span></a>An annoyance: argument arity</h2>
+
+<p>Suppose you have a function with four arguments. For the fact you're writing, all you care about is the first one. You wish you could write this:</p>
+
+<div class="highlight"><pre><span class="p">(</span><span class="nf">provided</span>
+  <span class="p">(</span><span class="nf">f</span> <span class="mi">3</span> <span class="o">&amp;</span> <span class="nv">anything</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="mi">8</span><span class="p">)</span>
+</pre></div>
+
+<p>You can't. You have to mention each argument specifically:</p>
+
+<div class="highlight"><pre><span class="p">(</span><span class="nf">provided</span>
+  <span class="p">(</span><span class="nf">f</span> <span class="mi">3</span> <span class="nv">anything</span> <span class="nv">anything</span> <span class="nv">anything</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="mi">8</span><span class="p">)</span>
+</pre></div>
+
+<p>Sorry. We're working on implementing the first form.</p>
+
+<p>Subject to the constraint that you have to mention each argument, variable-arity argument lists are not a problem. That is, you can write facts like this:</p>
+
+<div class="highlight"><pre><span class="p">(</span><span class="nf">fact</span> <span class="p">(</span><span class="nf">f</span> <span class="mi">1</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="mi">8</span>
+  <span class="p">(</span><span class="nf">provided</span>
+    <span class="p">(</span><span class="nf">g</span> <span class="mi">1</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="mi">3</span>
+    <span class="p">(</span><span class="nf">g</span> <span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span> <span class="mi">5</span><span class="p">)</span> <span class="nv">=&gt;</span> <span class="mi">50</span><span class="p">))</span>
+</pre></div>
+    </div>
+  </div>
+  </div>
+
+</div>
+<div id="gollum-footer">
+  <p id="last-edit">
+    Last edited by marick, <time class="js-relative-date" datetime="2013-02-27T16:19:57-08:00" title="2013-02-27 16:19:57">February 27, 2013</time>
+  </p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div>
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="http://developer.github.com">Developer</a></li>
+      <li><a href="http://training.github.com">Training</a></li>
+      <li><a href="http://shop.github.com">Shop</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+    </ul>
+
+    <a href="/">
+      <span class="mega-octicon octicon-mark-github"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>&copy; 2013 <span title="0.10067s from fe4.rs.github.com">GitHub</span>, Inc.</li>
+        <li><a href="/site/terms">Terms</a></li>
+        <li><a href="/site/privacy">Privacy</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-fullscreen-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="js-fullscreen-contents" placeholder="" data-suggester="fullscreen_suggester"></textarea>
+          <div class="suggester-container">
+              <div class="suggester fullscreen-suggester js-navigation-container" id="fullscreen_suggester"
+                 data-url="/marick/Midje/suggestions/commit">
+              </div>
+          </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped leftwards" title="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped leftwards"
+      title="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-remove-close close ajax-error-dismiss"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+    
+    <span id='server_response_time' data-time='0.10108' data-host='fe4'></span>
+    
+  </body>
+</html>
+

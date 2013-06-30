@@ -1,0 +1,113 @@
+This file describes how to get everything installed in order to write
+your first test. There are four cases, depending on whether you
+already have Leiningen installed and whether this hotel's network is
+working.
+
+All the instructions below assume you installed the contents of the
+thumb drive into `Desktop/lambda-jam`. Adjust as necessary. They also
+assume your current working directory is the root of the contents:
+
+   $ cd ~/Desktop/lambda-jam
+
+
+====== You already have Leiningen installed AND the network is available.
+
+1. Put the contents of `profiles.clj` in your own `~/.lein/profiles.clj`. 
+
+2. Give `lein midje` a trial run:
+
+   % cd robozzle
+   % lein midje
+
+   You should see this message: "No facts were checked. Is that what
+   you wanted?"
+
+
+====== You already have Leiningen installed AND the network is NOT available.
+
+1. Put the contents of `profiles.clj` in your own `~/.lein/profiles.clj`. 
+
+2. Save away your existing Maven (Java jar) repository:
+   % mv ~/.m2 ~/old-maven-repository
+
+3. Replace it with a prepopulated maven repository:
+
+   % mv network-free-install/m2 ~/.m2 
+
+   (Note that the dot is important.)
+
+4. Give `lein midje` a trial run:
+
+   % cd robozzle
+   % lein midje
+
+   You should see this message: "No facts were checked. Is that what
+   you wanted?"
+
+====== You do NOT have Leiningen installed BUT the network is available.
+
+1. Leiningen installs what it needs when it's first run, but you have to tell
+   the shell where it is. The simple way to do that is the following:
+
+   % export PATH=$PATH:~/Desktop/lambda-jam/bin
+
+   (Note: you must do that in each new shell / terminal window you open. You can 
+   also add that line to a `~/.bashrc` or equivalent file, if you know how to do that.) 
+
+2. Make leiningen pull down all that it needs.
+
+   % lein 
+
+   You should see messages about downloading, then a list of available tasks.
+
+3. Add the `lein midje` task.
+
+   % cp profiles.clj ~/.lein/profiles.clj
+   % lein help midje
+
+   After more about downloading, you should see a description of what `lein midje`
+   does. You don't need to read it.
+
+4. Make leiningen install everything else the exercises need:
+
+   % cd robozzle
+   % lein midje
+
+   You should see this message: "No facts were checked. Is that what
+   you wanted?"
+
+====== You do NOT have Leiningen installed AND the network is NOT available.
+
+1. Leiningen installs what it needs when it's first run, but you have to tell
+   the shell where it is. The simple way to do that is the following:
+
+   % export PATH=$PATH:~/Desktop/lambda-jam/bin
+
+   (Note: you must do that in each new shell / terminal window you open. You can 
+   also add that line to a `~/.bashrc` or equivalent file, if you know how to do that.) 
+
+2. Do you have an existing Maven (Java jarfile) repository? (You can check with `ls -ld ~/.m2`.)
+   If so, save it:
+
+   % mv ~/.m2 ~/old-maven-repository
+
+3. Replace it with a prepopulated maven repository:
+
+   % mv network-free-install/m2 ~/.m2 
+
+   (Note that the dot is important.)
+
+4. Do Leiningen's initialization for it:
+
+   % mv network-free-install/lein ~/.lein
+
+   (Note that the dot is important.)
+
+5. Give `lein midje` a trial run:
+
+   % cd robozzle
+   % lein midje
+
+   You should see this message: "No facts were checked. Is that what
+   you wanted?"
+
