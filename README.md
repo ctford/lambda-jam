@@ -1,4 +1,6 @@
 lambda-jam
 ==========
 
-Exercises for Lambda Jam workshop
+Materials for my Lambda Jam workshop, July 2013.
+
+See README.txt for instructions.
