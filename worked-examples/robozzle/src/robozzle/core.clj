@@ -1,6 +1,11 @@
 (ns robozzle.core
   (:use midje.sweet clojure.set))
 
+;;; I have a video of how I arrived at the code below. 
+;;; https://vimeo.com/19404746
+
+
+
 ;;; I didn't use the keywords directly in order to show just how long
 ;;; you can defer choosing concrete data structures.
 
