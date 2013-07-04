@@ -8,6 +8,8 @@ After starting the exercises, you can refer to the user guide at
 <https://github.com/marick/Midje/wiki>. If the network is down, the
 selected pages in `user-guide` may be helpful.
 
+There's a copy of the Clojure 1.5 API in `clojure-api.html`.
+
 === STARTING AN EXERCISE WITH AUTOTEST
 
     $ cd robozzle
