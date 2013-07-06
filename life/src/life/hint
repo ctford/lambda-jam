@@ -1,0 +1,29 @@
+
+
+;;; Here's a nice visual example, but it has the disadvantage of
+;;; forcing a representation on you right off the bat.
+
+(fact "blinkers work"
+  (tick #{  [0 1] [1 1] [2 1] })
+  
+  =>    #{        [1 2]
+                  [1 1]
+                  [1 0]       })
+
+;;; The following example is more abstract. It refuses to commit to
+;;; how cells are represented. It does assume that cells will be
+;;; held in sets. (You can write facts and code that don't even
+;;; assume that, but trying to maintain that lack-of-assumption gets
+;;; annoying.  I don't think the effort pays off for this exercise.)
+
+(unfinished survivors births fringe combine)
+
+(defn tick [living-cells]
+  )
+
+(fact "a `tick` transforms living and `fringe` cells into another set of living cells"
+  (tick ..living..) => ..new-living..
+  (provided
+    (survivors ..living..) => ..survivors..
+    (births (fringe ..living..) ..living..) => ..newborns..
+    (combine ..survivors.. ..newborns..) => ..new-living..))

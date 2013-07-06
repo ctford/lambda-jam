@@ -23,9 +23,12 @@
 
 ;;; STEP 4
 ;;; The two functions introduced in the previous step are easy to
-;;; implement.  It was further clear that they were really the same
-;;; function, but I decided it's still useful to make the distinction,
-;;; since it's natural (?) when talking about the domain.
+;;; implement.  They're also the same function: that is, both the
+;;; immediate neighbors and the potential parents are just the living
+;;; cells surrounding the cell in question.  But it seems allowable,
+;;; in a domain with this one's metaphor, to talk differently about
+;;; the cells that matter to dead and living cells. So I'm keeping the
+;;; terminology. 
 
 (defn living-cells-around [cell living-cells]
   (set/intersection (surroundings cell) living-cells))
@@ -46,7 +49,10 @@
 
 
 ;;; STEP 3
-;;; Births and survivors: the collection functions.
+
+;;; Births and survivors: the collection functions.  Note that using
+;;; metaconstants and `provided` allows an example that's simpler than
+;;; one you could construct with real Life cells.
 
 (defn births [fringe living-cells]
   (set (filter #(= 3 (count (potential-parents % living-cells))) fringe)))
@@ -63,7 +69,7 @@
   (set (filter #(#{2 3} (count (immediate-neighbors % living-cells))) living-cells)))
 
 
-(fact "A cell survives into the next generation if it has the right number of immediate neighbors"
+(fact "A cell survives into the next generation if it has two or three immediate neighbors"
   (let [living #{..too-crowded.. ..too-lonely.. ..on-the-low-side.. ..on-the-high-side..}]
     (survivors living) => #{..on-the-low-side.. ..on-the-high-side..}
     (provided
@@ -83,15 +89,16 @@
 ;;;
 ;;; Note that I still don't commit to how cells are represented nor to
 ;;; how many cells may be in a cell's surroundings. In fact, I needn't
-;;; even commit to the fact that if living cell A is adjacent to living
-;;; cell B, the reverse is also true.
+;;; even commit to the fact that if living cell A is adjacent to
+;;; living cell B, the reverse is also true. (But I do in the example,
+;;; because the converse would be weird.)
 
 (defn fringe [living]
   (let [all-possibilities (apply set/union (map surroundings living))]
     (set/difference all-possibilities living)))
 
 (fact "the fringe are all non-living cells in the 'surroundings' of the living cells"
-  ;; Let's illustrate some interesting cases
+  ;; Let's illustrate some interesting cases (not all are needed to drive the code)
   (let [living #{..living1.. ..living2..}]
     (fact "far-separated living cells"
       (fringe living) => #{..1.. ..2.. ..3.. ..4..}
@@ -99,7 +106,7 @@
         (surroundings ..living1..) => #{..1.. ..2..}
         (surroundings ..living2..) => #{..3.. ..4..}))
 
-    (fact "two living cells fringe can overlap"
+    (fact "two living cells' fringes can overlap"
       (fringe living) => #{..1.. ..2.. ..3..}
       (provided 
         (surroundings ..living1..) => #{..1.. ..2..}
@@ -133,21 +140,17 @@
 
 ;;; STEP 6
 ;;; Start with step 1 above.
-;;; Once everything was done, here's a final concrete "end-to-end" example:
+;;; Once everything was done, I wrote a final concrete "end-to-end"
+;;; example.  I'll often start with one. I didn't in this case because
+;;; it forced a representation on me faster than I wanted.
 
 
 (fact "blinkers work"
   (tick #{  [0 1] [1 1] [2 1] })
-  =>    #{    [1 2]
-              [1 1]
-              [1 0]})
+  
+  =>    #{        [1 2]
+                  [1 1]
+                  [1 0]       })
 
 ;;; I note, with a certain amount of smugness, that this test passed
 ;;; the first time.
-
-
-;;; Note: I'll often write the end-to-end example first, but in this
-;;; case I wanted to defer deciding on representation, so I couldn't
-;;; write an end-to-end test that used the final representation.
-
-

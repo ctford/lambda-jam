@@ -4,10 +4,10 @@
   (:use midje.sweet)
   (:use ocr.characters))
 
-(unfinished transform-ocr-parcel)
+(unfinished transform-ocr-stream)
 
 (fact "OCR-style account representations can be translated into strings"
-  (transform-ocr-parcel ["    _  _     _  _  _  _  _ "
+  (transform-ocr-stream ["    _  _     _  _  _  _  _ "
                          "  | _| _||_||_ |_   ||_||_|"
                          "  ||_  _|  | _||_|  ||_| _|"
                          "                           "
