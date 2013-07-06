@@ -1,0 +1,8 @@
+
+(cd ocr; lein midje)
+(cd robozzle; lein midje)
+(cd life; lein midje)
+
+(cd worked-examples/ocr; lein midje)
+(cd worked-examples/robozzle; lein midje)
+(cd worked-examples/life; lein midje)

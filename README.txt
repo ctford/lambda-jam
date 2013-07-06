@@ -1,14 +1,15 @@
 There are two empty exercise projects: `robozzle` and `life` in
 subdirectories of the same name. Three worked examples are in the
-`worked-examples` surdirectory.
+`worked-examples` subdirectory.
 
 Before starting the exercises, see `INSTALL.txt`.
 
-After starting the exercises, you can refer to the user guide at
+When doing the exercises, you can refer to the Midje user guide at
 <https://github.com/marick/Midje/wiki>. If the network is down, the
-selected pages in `user-guide` may be helpful.
+selected pages in the `user-guide` directory may be helpful.
 
-There's a copy of the Clojure 1.5 API in `clojure-api.html`.
+There's a copy of the Clojure 1.5 API in `clojure-api.html`. The
+Clojure set API is in `clojure-set-api.html`.
 
 === STARTING AN EXERCISE WITH AUTOTEST
 

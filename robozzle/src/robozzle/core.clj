@@ -1,5 +1,6 @@
 (ns robozzle.core
-  (use midje.sweet))
+  (:use midje.sweet
+        clojure.set))
 
 ;; TO AUTOTEST (see top-level README.txt for more detail)
 ;; % lein repl

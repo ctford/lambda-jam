@@ -3,11 +3,22 @@ your first test. There are four cases, depending on whether you
 already have Leiningen installed and whether this hotel's network is
 working.
 
-All the instructions below assume you installed the contents of the
-thumb drive into `Desktop/lambda-jam`. Adjust as necessary. They also
-assume your current working directory is the root of the contents:
+Note: I've assumed most people will have Unix laptops (Linux or
+Macs). I don't have installation instructions for Windows. Sorry.
+I suggest you pair up with a Unix person.
 
-   $ cd ~/Desktop/lambda-jam
+If the network is working, you can get the workshop directory like this:
+
+   % git clone https://github.com/marick/lambda-jam
+
+You can also get it from one of the thumb drives that are floating
+around.
+
+All the instructions below assume you installed the workshop directory
+into `Desktop/lambda-jam`. Adjust as necessary. They also assume your
+current working directory is the root of the contents:
+
+   % cd ~/Desktop/lambda-jam
 
 
 ====== You already have Leiningen installed AND the network is available.
