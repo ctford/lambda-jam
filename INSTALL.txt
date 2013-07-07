@@ -23,11 +23,9 @@ current working directory is the root of the contents:
 
 ====== You already have Leiningen installed AND the network is available.
 
-1. Put the contents of `profiles.clj` in your own `~/.lein/profiles.clj`. 
+1. Give `lein midje` a trial run:
 
-2. Give `lein midje` a trial run:
-
-   % cd robozzle
+   % cd life 
    % lein midje
 
    You should see this message: "No facts were checked. Is that what
@@ -36,20 +34,18 @@ current working directory is the root of the contents:
 
 ====== You already have Leiningen installed AND the network is NOT available.
 
-1. Put the contents of `profiles.clj` in your own `~/.lein/profiles.clj`. 
-
-2. Save away your existing Maven (Java jar) repository:
+1. Save away your existing Maven (Java jar) repository:
    % mv ~/.m2 ~/old-maven-repository
 
-3. Replace it with a prepopulated maven repository:
+2. Replace it with a prepopulated maven repository:
 
    % mv network-free-install/m2 ~/.m2 
 
    (Note that the dot is important.)
 
-4. Give `lein midje` a trial run:
+3. Give `lein midje` a trial run:
 
-   % cd robozzle
+   % cd life 
    % lein midje
 
    You should see this message: "No facts were checked. Is that what
@@ -71,17 +67,9 @@ current working directory is the root of the contents:
 
    You should see messages about downloading, then a list of available tasks.
 
-3. Add the `lein midje` task.
+3. Make leiningen install everything else the exercises need:
 
-   % cp profiles.clj ~/.lein/profiles.clj
-   % lein help midje
-
-   After more about downloading, you should see a description of what `lein midje`
-   does. You don't need to read it.
-
-4. Make leiningen install everything else the exercises need:
-
-   % cd robozzle
+   % cd life 
    % lein midje
 
    You should see this message: "No facts were checked. Is that what
@@ -116,7 +104,7 @@ current working directory is the root of the contents:
 
 5. Give `lein midje` a trial run:
 
-   % cd robozzle
+   % cd life
    % lein midje
 
    You should see this message: "No facts were checked. Is that what
